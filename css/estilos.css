@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+
+    
+body{
+    font-family: 'Playfair Display', serif;
+    color: blueviolet;
+    font-weight: bold;
+    background-color: #F2AEDB;
+    background-image: url("/imagenes/pexels-karolina-grabowska-5713710.jpg");
+}
+
+#enlace{
+    text-decoration: none;
+}
+#enlace1{text-decoration: none;}
+#enlace2{
+    text-decoration: none;
+
+}
+#enlace3{
+    text-decoration: none;
+
+}
+#enlace4{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+h2{
+    background-color: aquamarine;
+    text-align: center;
+}
+.body{
+    display: grid;
+    grid-template-columns: 3fr ;
+    justify-content:center;
+    gap: 10px;
+
+}
+footer{
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between
+    
+    
+}
+article{
+    display:grid;
+    justify-content: center;
+}
+@media screen  and (min-width:320px){
+    .body{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    .body{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        row-gap: 10px;
+
+    }
+    
+}
+    
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+       
+
+
+
+    
+    
+
