@@ -6,8 +6,9 @@ body{
     font-family: 'Playfair Display', serif;
     color: blueviolet;
     font-weight: bold;
-    background-color: #F2AEDB;
-    background-image: url("/imagenes/pexels-karolina-grabowska-5713710.jpg");
+    background-color: antiquewhite;
+
+
 }
 
 #enlace{
@@ -37,6 +38,8 @@ h2{
     grid-template-columns: 3fr ;
     justify-content:center;
     gap: 10px;
+   
+    
 
 }
 footer{
@@ -56,6 +59,8 @@ article{
         grid-template-columns: 1fr;
         justify-content: center;
         row-gap: 10px;
+        
+        
     }
     
 }
@@ -69,7 +74,64 @@ article{
     }
     
 }
+.textolorem{
     
+background-color: aquamarine;
+font-size:x-large;
+padding-inline-start: 10%;
+padding-inline-end: 10%;
+
+}
+.griddos{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+div{
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine;
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in;
+    animation-duration: 5s;
+    animation-delay: 10s;
+}
+@keyframes animacion{
+     0%{
+        width: 300px;
+    }
+     15%{
+        width: 200px;
+    }
+    
+     50%{
+        width: 1000px;
+        background-color: pink;
+    }
+     75%{
+        width: 500px;
+    }
+     100%{
+        width: 300px;
+        background-color: aquamarine;
+    }
+}
+h1{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-timing-function: infinite;
+    background-color: aquamarine;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 
 
