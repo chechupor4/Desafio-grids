@@ -130,6 +130,42 @@ padding-inline-end: 10%;
 
 }
 
+@media (min-width: 576px) {
+    section{
+    
+}
+@media (min-width: 768px) {
+    section{
+      
+    }
+}
+@media (min-width: 992px) {
+    section{
+       
+       
+    }
+}
+@media (min-width: 1200px){
+    section{
+       
+  
+    }
+
+}
+.carrousel{
+    display:inline-grid
+   
+}
+
+
+
+    
+}
+h1{
+    font-weight: 200;
+    font-size: xx-large;
+    color: black;
+}
 
 
     
