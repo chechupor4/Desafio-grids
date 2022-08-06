@@ -94,18 +94,13 @@ article{
 .textolorem{
     
 background-color: aquamarine;
-font-size:x-large;
+font-size:large;
+margin-top: 5%;
 padding-inline-start: 10%;
 padding-inline-end: 10%;
 
 }
-.griddos{
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    padding: 2%;
-    margin: 2%;
-}
+
 .logo{
     display:grid;
     padding-bottom: 2%;
@@ -130,47 +125,56 @@ padding-inline-end: 10%;
 
 }
 
-@media (min-width: 576px) {
-    section{
-    
-}
-@media (min-width: 768px) {
-    section{
-      
-    }
-}
-@media (min-width: 992px) {
-    section{
-       
-       
-    }
-}
-@media (min-width: 1200px){
-    section{
-       
-  
-    }
 
-}
 .carrousel{
     display:inline-grid
    
 }
 
-
-
-    
-}
 h1{
     font-weight: 200;
-    font-size: xx-large;
+    font-size:x-large;
     color: black;
 }
 
+h3{
+    background-color: aquamarine;
+    font-size:x-large;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
 
-    
-    
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
 
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+    .carrousel{
+        width: 50%;
+        height: 50%;
+
+        margin:0 auto
+    }
+    article{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin: 2%;
+        padding: 2%;
+        justify-items: center;
+    }
+    
+.producto{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 2%;
+}
 
 
     

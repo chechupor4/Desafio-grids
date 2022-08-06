@@ -5,32 +5,61 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Producto</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="body">
-	
 	<header>
-		<img src="../imagenes/Logo retro Funky fucsia y rosa tienda de ropa manicura belleza.png" alt="logo" height="150" width="150">
-		<nav>
-			<ul>
-				<div class="padre-flex">
-				<li><a href="../index.html" target="_blank">Home</a></li>
-				<li><a href="sobremi.html">Sobre Mi</a></li>
-                <li><a href="especiales.html">Ocasiones Especiales</a></li>
-				<li><a href="producto.html">Nuestros Productos</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
+	
+		<div class="logo">
+		<img src="../imagenes/Logo retro Funky fucsia y rosa tienda de ropa manicura belleza.png"logo" width="300px" height="200px" >
+	     </div>
+		<nav class="navbar navbar-expand-lg bg-pink ">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="../index.html">Inicio</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link " href="./sobremi.html">Sobre Mi</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="especiales.html">Ocasiones Especiales</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="producto.html"button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Nuestros Productos
+					</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="producto.html">Muffins y Macarrons</a></li>
+					  <li><a class="dropdown-item" href="producto.html">Tortas</a></li>
+					  <li><hr class="dropdown-divider"></li>
+					  <li><a class="dropdown-item" href="producto.html">Postres</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="contacto.html">Contacto</a>
+				</ul>
+				<form class="d-flex" role="search">
+				  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+				  <button class="btn btn-outline-success" type="submit">Buscar</button>
+				</form>
+			  </div>
 			</div>
-			</ul>
-		</nav>
+		  </nav>
+	
 	</header>
 	
+	<section class="producto">
 	
-	<section class="griddos">
 	
-		<article> 
-			<h2> Conoce nuestros productos</h2>
-		</article>
+		<h2> Conoce nuestros productos</h2>
+	
 		<img src="../imagenes/pexels-jess-bailey-designs-853004.jpg" alt="cupcake" height="350" width="300">
+
 		<h2>Muffins y Macarrons
 			<p class="textolorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, consequuntur repudiandae, ipsum sit molestiae nesciunt et nisi delectus perferendis ratione molestias, magni quaerat hic quasi aliquid repellendus? Iure, saepe eos?
 			Voluptas expedita unde quasi. Labre rerum consectetur placeat nesciunt magnam accusamus sed consequuntur deleniti, voluptate molestiae, aut corrupti. Repellendus excepturi maiores optio in aperiam!
