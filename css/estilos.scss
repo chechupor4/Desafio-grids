@@ -1,25 +1,13 @@
+@import "variables"
+
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 body {
-  font-family: "Playfair Display", serif;
+  font-family:$font-family
   color: blueviolet;
   font-weight: bold;
-  background-color: antiquewhite;
+  background-color: $colorPrincipal;
 }
-
-.body {
-  display: inline-grid;
-  grid-template-columns: 3fr;
-  justify-content: center;
-  gap: 10px;
-}
-.body .logo {
-  display: grid;
-  padding-bottom: 2%;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-top: 2%;
-  justify-content: center;
-}
+@import "body";
 
 #enlace {
   text-decoration: none;
@@ -95,16 +83,18 @@ article {
   font-size: large;
   margin-top: 5%;
   -webkit-padding-start: 10%;
-  padding-inline-start: 10%;
+          padding-inline-start: 10%;
   -webkit-padding-end: 10%;
-  padding-inline-end: 10%;
+          padding-inline-end: 10%;
 }
+
 
 .sobremi {
   display: grid;
   justify-items: center;
   padding: 2%;
 }
+
 
 .carrousel {
   display: inline-grid;
@@ -120,11 +110,11 @@ h3 {
   background-color: aquamarine;
   font-size: x-large;
   -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-name: aparecer;
-  animation-name: aparecer;
+          animation-name: aparecer;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes aparecer {
@@ -135,6 +125,7 @@ h3 {
     opacity: 1;
   }
 }
+
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -164,11 +155,14 @@ article {
   padding: 2%;
 }
 
-section .trabajos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 2%;
+section{
+    .trabajos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 2%;
+        &:hover{
+        size: 300px;
+  }
+
+    }
 }
-section .trabajos:hover {
-  size: 300px;
-}/*# sourceMappingURL=estilos.css.map */
