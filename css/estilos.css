@@ -8,7 +8,7 @@ body {
 
 .body {
   display: inline-grid;
-  grid-template-columns: 3fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   gap: 10px;
 }
