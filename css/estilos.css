@@ -46,9 +46,11 @@ ul {
 }
 
 h2 {
-  background-color: aquamarine;
+  background-color: lightgray;
   text-align: center;
   font-size: x-large;
+  padding: 5%;
+  margin-top: 3%;
 }
 
 footer {
@@ -69,6 +71,7 @@ article {
     grid-template-columns: 1fr;
     justify-content: center;
     row-gap: 10px;
+    background-color: pink;
   }
   .foto {
     filter: grayscale(100%);
@@ -88,10 +91,11 @@ article {
     grid-template-columns: 1fr;
     justify-content: center;
     row-gap: 10px;
+    background-color: antiquewhite;
   }
 }
 .textolorem {
-  background-color: aquamarine;
+  background-color:lightgray;
   font-size: large;
   margin-top: 5%;
   -webkit-padding-start: 10%;
@@ -107,7 +111,12 @@ article {
 }
 
 .carrousel {
-  display: inline-grid;
+  display:grid;
+  justify-items: center;
+  padding: 5%;
+
+  
+  
 }
 
 h1 {
@@ -117,7 +126,7 @@ h1 {
 }
 
 h3 {
-  background-color: aquamarine;
+  background-color:lightgray;
   font-size: x-large;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
@@ -125,6 +134,7 @@ h3 {
   animation-name: aparecer;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  padding: 3%;
 }
 
 @-webkit-keyframes aparecer {
@@ -172,3 +182,32 @@ section .trabajos {
 section .trabajos:hover {
   size: 300px;
 }/*# sourceMappingURL=estilos.css.map */
+p{
+  font-size: large;
+  text-align:center;
+  font-weight: 300;
+  background-color:lightgrey;
+  padding: 2%;
+}
+.col-md-4{
+  padding: 2%;
+  margin:2%;
+}
+.col-md-6{
+  padding: 2%;
+  margin: 2%;
+}
+.col-md-3{
+  padding: 2%;
+  margin: 2%;
+}
+.form-check{
+  padding: 2%;
+  margin: 2%;
+}
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+ 
+}
