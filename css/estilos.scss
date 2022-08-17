@@ -1,9 +1,8 @@
-@import "variables"
+@import "variables";
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 body {
-  font-family:$font-family
-  color: blueviolet;
+  font-family:$font-family;
   font-weight: bold;
   background-color: $colorPrincipal;
 }
@@ -79,26 +78,26 @@ article {
   }
 }
 .textolorem {
-  background-color: aquamarine;
+  background-color:#A6659B;
   font-size: large;
   margin-top: 5%;
-  -webkit-padding-start: 10%;
-          padding-inline-start: 10%;
-  -webkit-padding-end: 10%;
-          padding-inline-end: 10%;
+  -webkit-padding-start: 5%;
+          padding-inline-start: 5%;
+  -webkit-padding-end: 5%;
+          padding-inline-end: 5%;
 }
 
+.carousel{
+  width: 30%;
+  margin: 0 auto;
+}
 
 .sobremi {
-  display: grid;
-  justify-items: center;
-  padding: 2%;
+  display:grid;
+  width: 30%;
+  margin:0 auto;
 }
 
-
-.carrousel {
-  display: inline-grid;
-}
 
 h1 {
   font-weight: 200;
@@ -134,12 +133,6 @@ h3 {
     opacity: 1;
   }
 }
-.carrousel {
-  width: 50%;
-  height: 50%;
-  margin: 0 auto;
-}
-
 article {
   display: grid;
   grid-template-columns: 1fr;
@@ -157,12 +150,39 @@ article {
 
 section{
     .trabajos{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 2%;
-        &:hover{
-        size: 300px;
+      display: grid;
+        
   }
 
     }
+
+.Whatssap{
+  background-color: green;
+}
+.Instagram{
+  background-color: fuchsia;
+}
+
+$redes: (Whatssap:green,Instagram:fuchsia);
+
+.whatssapDos{
+  background-color: map-get($redes,Whatssap);
+}
+.texto{
+  @extend .textolorem;
+}
+@mixin fondo {
+  background-color:#A6659B ;
+  
+}
+.encabezado{
+  @include fondo;
+  display: grid;
+  margin: 3%;
+}
+.filtros{
+  filter:grayscale(100%)
+}
+.filtros:hover{
+  filter: grayscale(0%);
 }
